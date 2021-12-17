@@ -2,7 +2,7 @@
 
 # hangman-game :
 the famous hangman game, made with vanilla taste haha
-###live demo: 
+### live demo: 
 [hangman game](https://issam-hub.github.io/hangman-game/)
 
 
