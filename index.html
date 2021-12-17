@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hangman</title>
+        <!-- The Css File -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="content">
+            <div class="title">
+                <h1>Hangman</h1>
+                <p>find the word - enter a letter</p>
+            </div>
+            <div class="design">
+                <span class="gallows-base"></span>
+                <span class="gallows-pole"></span>
+                <span class="gallows-humor"></span>
+                <span class="person head"></span>
+                <span class="person body"></span>
+                <span class="person leftArm"></span>
+                <span class="person rightArm"></span>
+                <span class="person leftLeg"></span>
+                <span class="person rightLeg"></span>
+            </div>
+            <div class="wrongList"><h2>Wrong list:</h2></div>
+            <div class="word"></div>
+        </div>
+        <div class="winner">
+            <div class="stuff">
+                <h2>You Did It! YaaaY</h2>
+                <button>Play Again</button>
+            </div>
+        </div>
+        <div class="loser">
+            <div class="stuff">
+                <h2>You failed, retry</h2>
+                <button>Play Again</button>
+            </div>
+        </div>
+        <!-- The Js File -->
+        <script src="main.js"></script>
+    </body>
+</html>
