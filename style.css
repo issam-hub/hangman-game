@@ -1,0 +1,217 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    background-color: rgb(53, 72, 94);
+}
+/* End Global rules */
+
+/* Start Content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-block: 30px;
+    color: white;
+    text-align: center;
+}
+.content .design {
+    height: 300px;
+    width: 350px;
+    position: relative;
+}
+.content .design > span:not(.gallows-base, .gallows-pole, .gallows-humor) {
+    display: none;
+}
+.content .design .person.display {
+    display: block;
+}
+.design .gallows-base {
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+}
+.design .gallows-pole {
+    display: block;
+    height: 80%;
+    width: 80px;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+.design .gallows-humor {
+    display: block;
+    height: 40px;
+    width: 4px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+}
+.design .head {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    top: 32%;
+    left: 30.8%;
+}
+.design .body {
+    display: block;
+    height: 90px;
+    width: 4px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 44%;
+    left: 36%;
+}
+.design .leftArm {
+    display: block;
+    height: 50px;
+    width: 4px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 43%;
+    left: 31%;
+    transform: rotate(-45deg);
+}
+.design .rightArm {
+    display: block;
+    height: 50px;
+    width: 4px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 42.7%;
+    left: 41%;
+    transform: rotate(45deg);
+}
+.design .leftLeg {
+    display: block;
+    height: 50px;
+    width: 4px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 70.5%;
+    left: 31%;
+    transform: rotate(45deg);
+}
+.design .rightLeg {
+    display: block;
+    height: 50px;
+    width: 4px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 70.5%;
+    left: 41%;
+    transform: rotate(-45deg);
+}
+.content .wrongList {
+    text-align: left;
+    padding-block: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 350px;
+}
+.content .wrongList h2 {
+    color: red;
+    font-size: 1.5rem;
+}
+.content .wrongList p {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    text-decoration: line-through 2px black;
+}
+.content .word {
+    font-size: 1.5rem;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.content .word .letter {
+    padding-inline: 8px;
+    margin-inline: 3px;
+    position: relative;
+    border-bottom: 2px solid cyan;
+}
+.content .word p {
+    display: none;
+}
+.content .word .show {
+    display: block;
+}
+.winner,
+.loser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(12 50 73 / 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.winner .stuff,
+.loser .stuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(40, 129, 185);
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+}
+.winner h2,
+.loser h2 {
+    color: white;
+    letter-spacing: 1.5px;
+}
+.winner button,
+.loser button {
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: rgb(65, 140, 187);
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.reveal {
+    display: flex;
+}
+/* End Content */
